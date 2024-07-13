@@ -16,7 +16,7 @@ const Products = () => {
 
   useEffect(() => {
     scrollYProgress.on('change', (latestValue) => console.log(latestValue))
-  }, [])
+  }, [scrollYProgress])
 
   const rotateX = useTransform(scrollYProgress, [0,1], [15,0])
   const opacity = useTransform(scrollYProgress, [0,1], [.5,1])
@@ -24,7 +24,7 @@ const Products = () => {
   return (
     <div className='container text-white bg-black bg-gradient-to-b from-black to-[#5D2CA8] py-[72px] md:py-24'>
         <h2 className='text-center text-5xl md:text-6xl font-bold'>Intuitive Interface</h2>
-        <p className='text-xl max-w-2xl mx-auto text-center text-white/70 mt-5'>Celebrate the joy of accomplishment with an app designed to track your progress, motivate your effors, adnn celebrate your success, one task at a time.</p>
+        <p className='text-xl max-w-2xl mx-auto text-center text-white/70 mt-5'>Celebrate the joy of accomplishment with an app designed to track your progress, motivate your effors, and celebrate your success, one task at a time.</p>
         <motion.div
           style={{
             opacity: opacity,

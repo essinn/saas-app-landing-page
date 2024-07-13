@@ -40,7 +40,7 @@ const images = [
 const Slider = () => {
   return (
     <div className='container bg-black text-white py-[72px] sm:py-24'>
-      <h2 className='text-xl font-semibold text-center text-white/70'>Trusted By The World's Most Inovated Teams</h2>
+      <h2 className='text-xl font-semibold text-center text-white/70'>Trusted By The World&apos;s Most Inovated Teams</h2>
       <div className='overflow-hidden mt-9 before:content-[""] before:z-10 after:content-[""] before:absolute after:absolute before:h-full after:h-full before:w-5 after:w-5 relative after:right-0 before:left-0 before:top-0 after:top-0 before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0)] after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))]'>
         <motion.div
           transition={{
